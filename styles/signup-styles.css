@@ -69,7 +69,7 @@
         font-size: 1rem;
         padding-bottom: 2rem; 
     }
-    #email,#password,#name{
+    #email,#password,#name1{
         height: 2.2rem;
         width:23rem;
         border: 0.08rem solid rgb(197, 197, 197);
@@ -163,7 +163,7 @@
         width: 15rem;
         margin-top: 0;
     }
-    #email,#password,#name{
+    #email,#password,#name1{
         height: 2.5rem;
         width:16rem;
         border: 0.08rem solid rgb(212, 212, 212);
