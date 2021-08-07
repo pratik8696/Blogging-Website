@@ -1,89 +1,4 @@
-<style>
-    *{
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    box-sizing: border-box;
-    }
-    .header{
-        height:4rem;
-        width:100%;
-        background-color: rgb(238, 242, 243);
-        border-bottom:  0.08rem solid rgb(170, 170, 170);
-        display:flex;
-        flex-direction: row;
-    }
-    .logos{
-        height: 3rem;
-        width:13rem;
-        margin:0.5rem;
-        margin-left: 0rem;
-    }
-    .fa-navicon{
-       color:red;
-       margin: 1rem;
-       margin-right: 0.5rem;
-    }
-    .popup{
-        width: 19rem;
-        height:25rem;
-        background-color: rgb(255, 255, 255);
-        border-radius: 1rem;
-        border:  0.1rem solid rgb(230, 230, 230);
-        box-shadow:  1px 1px 3px 0.3px rgb(233, 233, 233);
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .logo{
-        height: 3rem;
-        width:10rem;
-    }
-    .imangi,.butt,.list{
-        margin-left:3rem;
-    }
-    .new{
-        border:none;
-        height: 2.5rem;
-        width:12rem;
-        color: white;
-        background-color: rgb(93, 93, 240);
-        border-radius: 1rem;
-        font-size: 1rem;
-        font-weight: 600;
-    }
-    .list{
-        display:flex;
-        justify-content:space-between;
-    }
-    li{
-        list-style-type: none;
-    }
-    .lit{
-        
-        margin: 0.7rem;
-        cursor: pointer;
-        
-        height: 1.7rem;
-        width: 11rem;
-        border-radius: 0.3rem;
-        padding: 0.3rem;
-    }
-    .lit:hover{
-        background-color: wheat;
-    }
-    .new:hover{
-        box-shadow:  1px 1px 3px 0.3px rgb(168, 168, 168);
-    }
-    .fa-times{
-        position: relative;
-        left:16rem;
-        font-size: 1.8rem;
-      }
-</style>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,30 +8,212 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header>
-            <div class="header">
-            <div class="headd"><button onclick="openPopup()"><i class="fa fa-navicon" style="font-size:1.8rem" ></i></button> </div>
-            <div class="img">    <img src="img/vlomger-logo.svg" alt="img" class="logos"></div>
+
+            <div class="head">
+                <div class="profile">
+                    <img src="img/profilepicturev2.jpg" alt="" class="profile-pic">
+                    <h3 class="date">Aug 02, 2020</h3>
+                    <h4 class="time">06:40 am</h4>
+                </div>
+                <div class="cheer">
+                     <h2 class="cheering">🌤 Good Morning, <span class="name">Ketan</span></h2>
+                </div>
+                <div class="search">
+                       <div class="menu">
+                       <a href="javascript:void(0);" class="icon" onclick="myFunction()" > <i class="fa fa-bars"></i></a>
+                       </div>
+                         <div>
+                        <form action="">
+                        <input type="text" name="articles" id="articles" placeholder="Search for articles">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </form></div>
+                </div>
+            
             </div>
         </header>
-         <div class="popup" id="popup">
-             <i class="fa fa-times" aria-hidden="true"></i>
-           <div class="imangi"><img src="img/vlomger-logo.svg" alt="img" class="logo"></div> 
-           <div class="butt"><button class="new">New Blog</button></div>
-            <div class="list"><ul>
-                <li> <div class="lit"> My Feed</div></li>
-                <li><div class="lit">Explore</div></li>
-                <li><div class="lit">Tags</div></li>
-                <li><div class="lit">Bookmarks</div></li>
-                <li><div class="lit">Search</div></li>
-              </ul>
+        <div class="greeting-mobile">
+            <div class="data">
+            <img src="img/profilepicturev2.jpg" alt="" class="profile-pic">
+            <h3 class="date">Aug 02, 2020</h3>
+            <h4 class="time">06:40 am</h4> 
+            </div> 
+            <div class="greet">
+                <h2 class="cheering">🌤 Good Morning, <span class="name">Ketan</span></h2>
+            </div>
         </div>
-         </div>
+
+        <div id="navbar">
+            <ul >
+                <li class="feeds"><span class="material-icons">
+                   insert_comment
+                   </span>My Feed</li>
+                <li><span class="material-icons">
+                   explore
+                   </span>Explore</li>
+                <li><span class="material-icons">
+                   style
+                   </span>Tags</li>
+                <li><span class="material-icons">
+                   bookmarks
+                   </span>Bookmarks</li>
+                <li><span class="material-icons">
+                   bookmarks
+                   </span>Search</li>
+                <li><span class="material-icons">
+                   expand_more
+                   </span>More</li>
+            </ul>
+        </div>
+        <div class="space">
+            
+        </div>
+        <div class="body">
+            <div class="left">
+                <div class="write">
+                    <h2 class ="pencil">  <img src="img/pencil-24.png" alt="nax">  Write</h2>
+                </div>
+                 <ul >
+                     <li class="feeds"><span class="material-icons">
+                        insert_comment
+                        </span>My Feed</li>
+                     <li><span class="material-icons">
+                        explore
+                        </span>Explore</li>
+                     <li><span class="material-icons">
+                        style
+                        </span>Tags</li>
+                     <li><span class="material-icons">
+                        bookmarks
+                        </span>Bookmarks</li>
+                     <li><span class="material-icons">
+                        bookmarks
+                        </span>Search</li>
+                     <li><span class="material-icons">
+                        expand_more
+                        </span>More</li>
+                 </ul>
+                 <div class="newsletter">
+
+                 </div>
+            </div>
+            <div class="center">
+              <div class="article1">
+                <div class="img1">
+                    <img src="img/hakon-helberg-99985-unsplash.jpg" alt="" class="sparrow-img">
+                </div>
+                <div class="text">
+                    <h3 class="class">Environment</h3>
+                    <h1 class="title">Declining Sparrow Population A Major Threat To Mankind</h1>
+                    <p class="sparrow"></p>
+                    <div class="credit">
+                      <div class="image"><img src="img/profilepicturev2.jpg" alt="" class="profile-pic"></div>  
+                    
+                    <div class="nameplate">
+                        <h2 class="names">Sudhanshu Ranjan</h2>
+                        <h3 class="dates">Aug 21, 2021</h3>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="article1">
+                <div class="img1">
+                    <img src="img/hakon-helberg-99985-unsplash.jpg" alt="" class="sparrow-img">
+                </div>
+                <div class="text">
+                    <h3 class="class">Environment</h3>
+                    <h1 class="title">Declining Sparrow Population A Major Threat To Mankind</h1>
+                    <p class="sparrow"></p>
+                    <div class="credit">
+                      <div class="image"><img src="img/profilepicturev2.jpg" alt="" class="profile-pic"></div>  
+                    
+                    <div class="nameplate">
+                        <h2 class="names">Sudhanshu Ranjan</h2>
+                        <h3 class="dates">Aug 21, 2021</h3>
+                    </div>
+                </div>
+                </div>
+              </div>
+              
+              <div class="article1">
+                <div class="img1">
+                    <img src="img/hakon-helberg-99985-unsplash.jpg" alt="" class="sparrow-img">
+                </div>
+                <div class="text">
+                    <h3 class="class">Environment</h3>
+                    <h1 class="title">Declining Sparrow Population A Major Threat To Mankind</h1>
+                    <p class="sparrow"></p>
+                    <div class="credit">
+                      <div class="image"><img src="img/profilepicturev2.jpg" alt="" class="profile-pic"></div>  
+                    
+                    <div class="nameplate">
+                        <h2 class="names">Sudhanshu Ranjan</h2>
+                        <h3 class="dates">Aug 21, 2021</h3>
+                    </div>
+                </div>
+                </div>
+              </div>
+        
+                 
+            </div>
+            <div class="right">
+
+                <div class="box">
+                <div class="box-info">
+                   <h2 class="day">Monday Capsule</h2>
+                   <h3 class="thought">Honesty is the best policy</h3> 
+                </div>
+                <div class="weather" >
+                    <h2 class="place">Patna, Bihar</h2>
+                    <h1 class="temperature">28° <span>c</span> </h1>
+                    <h3>🌤 Partial clowdy</h3> 
+                </div>
+            </div>
+
+            <div class="covid">
+                <h2 class="data">Covid Status</h2>
+                <ul class="datalabel">
+                    <li>Bihar</li>
+                    <li>Maharashtra</li>
+                    <li>Delhi</li>
+                    <li>Uttar Pradesh</li>
+                    <li>Kerala</li>
+                    <li>Gujarat</li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="foot">
+              <div class="news">
+                  <h1 class="news-text">Subscribe to our newsletter.</h1>
+                  <form action="">
+                      <input type="email" name="email" id="email" placeholder="Enter Your Email Id">
+                      <button class="confirm">Submit</button>
+                  </form>
+              </div>
+            </div>
+            <div class="copy">
+                   <h4 class="company"> &copy;Vlomger</h4>
+            </div>  
+        </footer>
 
         
-        <script src="" async defer></script>
+        <script src="main.js">
+           
+        </script>
     </body>
 </html>
