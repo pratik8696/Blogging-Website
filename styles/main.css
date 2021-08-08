@@ -7,6 +7,9 @@
     font-weight: 400;
     box-sizing: border-box;
     }
+    a{
+        text-decoration: none;
+    }
     .body{
         background-color: rgb(215, 221, 238);
     }
